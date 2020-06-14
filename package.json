@@ -1,6 +1,6 @@
 {
   "name": "binary-quiz-frontend",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "author": "Zev Averbach <zev@averba.ch> (https://averba.ch)",
   "license": "MIT",
   "scripts": {
