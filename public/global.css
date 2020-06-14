@@ -64,3 +64,30 @@ button:not(:disabled):active {
 button:focus {
 	border-color: #666;
 }
+.inputs {
+	text-align: right; width: 2em; border: none; outline: none;
+}
+
+
+.primary-button {
+	cursor: pointer;
+    border: none;
+	background-color: dodgerblue;
+	color: white
+}
+
+.button {
+    cursor: pointer;
+	background-color: white;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield;
+}
+

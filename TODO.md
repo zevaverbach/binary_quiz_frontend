@@ -1,6 +1,7 @@
 - deploy
   - now.sh, waiting for it to be purely front end
     - purely front end except for mailing list
+- remove repeated exercises
 - make text inputs big enough for MAX_DIGITS_PROBLEMS and MAX_DIGITS_BITS
 - show a message on submit
 - show warning when specifying invalid number of bits or problems

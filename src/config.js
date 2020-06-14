@@ -7,3 +7,7 @@ export const MAX_DIGITS_BITS = MAX_BITS.toString().length
 export const DEFAULT_BITS = 8
 export const DEFAULT_NUM_PROBLEMS = 20
 
+export const getMaxPermutations = (bits) => {
+   return Math.pow(2, bits)
+}
+
