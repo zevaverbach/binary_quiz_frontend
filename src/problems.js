@@ -3,14 +3,15 @@ import {DEFAULT_BITS, DEFAULT_NUM_PROBLEMS} from "./config";
 export const generateProblems = (bits, num_problems) => {
     let probs = []
     let counter = 0
+
     while (counter < (num_problems || DEFAULT_NUM_PROBLEMS)) {
         let problem = generateProblem(bits || DEFAULT_BITS)
-        if (probs.includes(problem)) {
-            continue
+        if (!probs.includes(problem)) {
+            probs.push(problem)
+            counter++
         }
-        probs.push(problem)
-        counter++
     }
+
     return probs
 }
 

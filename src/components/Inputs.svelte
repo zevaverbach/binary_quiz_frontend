@@ -1,5 +1,5 @@
 <script>
-    import download from '../utils/download'
+    import download from '../download'
     import {
         MIN_BITS, MAX_BITS, MIN_PROBLEMS, MAX_PROBLEMS, DEFAULT_BITS, DEFAULT_NUM_PROBLEMS,
         MAX_DIGITS_BITS, MAX_DIGITS_PROBLEMS

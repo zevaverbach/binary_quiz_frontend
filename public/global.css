@@ -94,3 +94,10 @@ input[type=number] {
     -moz-appearance:textfield;
 }
 
+.problem {
+	font-size: 3em;
+}
+
+.problem input[type=number] {
+	border: none;
+}
