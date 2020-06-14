@@ -36,7 +36,7 @@
     <form on:submit|preventDefault={check} class="{class_} problem">
         <label>
            {problem} =
-           <input autofocus type=number style="width: {$bits}em" bind:value={solution}>
+           <input autofocus type=number bind:value={solution}>
         </label>
         <input type=submit style="visibility: hidden">
     </form>
@@ -45,8 +45,10 @@
 <style>
     .problem {
         font-size: 3em;
-        display: flex;
-        flex-direction: row;
+    }
+
+    .problem input[type=number] {
+       border: none;
     }
     .incorrect {
         border: dodgerblue;

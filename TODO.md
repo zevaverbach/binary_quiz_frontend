@@ -1,13 +1,17 @@
-- deploy
-  - now.sh, waiting for it to be purely front end
-    - purely front end except for mailing list
-- remove repeated exercises
 - make text inputs big enough for MAX_DIGITS_PROBLEMS and MAX_DIGITS_BITS
 - show a message on submit
 - show warning when specifying invalid number of bits or problems
-- prevent submissions more than x times per time
-- show a live-updating preview as you select different settings
-- make it look nice
 - add contact info
 - add 'about'
 - add mailing list
+  - prompt at the end of a quiz to sign up for it
+- uncomment PDF part
+- add PDF export in pure front end
+- does it work on mobile?
+- add animations
+  - 'nuh-uh' shake for wrong answers
+  - nice reward animations for right answers
+  - make the placeholders become real text for a split second before starting
+  - super mario land pixellation animation
+- deploy to production
+  - use a custom domain

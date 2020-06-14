@@ -68,6 +68,9 @@ button:focus {
 	text-align: right; width: 2em; border: none; outline: none;
 }
 
+input:focus {
+	outline: none;
+}
 
 .primary-button {
 	cursor: pointer;

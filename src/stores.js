@@ -14,6 +14,6 @@ export const valid = derived([bits, num_problems], ([$bits, $num_problems]) => (
     && ($bits || DEFAULT_BITS) >= MIN_BITS
     && ($num_problems || DEFAULT_NUM_PROBLEMS) >= MIN_PROBLEMS
     && ($num_problems || DEFAULT_NUM_PROBLEMS) <= MAX_PROBLEMS
-    && ($num_problems || DEFAULT_NUM_PROBLEMS) <= getMaxPermutations($bits)
+    && ($num_problems || DEFAULT_NUM_PROBLEMS) <= getMaxPermutations($bits || DEFAULT_BITS)
 ))
 

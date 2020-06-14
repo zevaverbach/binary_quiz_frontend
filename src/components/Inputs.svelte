@@ -14,6 +14,9 @@
     }
 
     const submit = () => {
+        if (!$num_problems){
+            num_problems.update(() => DEFAULT_NUM_PROBLEMS)
+        }
         const problems_ = generateProblems($bits, $num_problems)
         problems.update(() => problems_)
         activeQuiz.update(() => true)
@@ -33,7 +36,7 @@
                     type=number
                     bind:value={$bits}
             >
-            Bits
+            bits
         </label>
         <label>
             <input
@@ -44,9 +47,18 @@
                     type=number
                     bind:value={$num_problems}
             >
-            Number of Problems
+            problems
         </label>
     </div>
-    <input class="primary-button" disabled={!$valid} type=submit value="Start Quiz" >
-    <input class="button" disabled={!$valid} type=button on:click={downloadAndClear} value="Download PDFs">
+    <input class="primary-button" disabled={!$valid} type=submit value="Start Quiz [enter]" >
+<!--    <input class="button" disabled={!$valid} type=button on:click={downloadAndClear} value="Download PDFs">-->
 </form>
+
+<style>
+    input[type=number] {
+        font-size: 3em;
+    }
+    input[type=submit] {
+        font-size: 1.5em;
+    }
+</style>
