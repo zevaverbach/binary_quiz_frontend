@@ -34,8 +34,15 @@
 </script>
 
 {#if displaySummary}
-    <div>Congratulations, you've completed {$num_problems} {$bits}-bit problems!</div>
-    <a href="#" on:click={reset}>Go back to home screen.</a>
+    <div style="font-size: 2em;">
+        <div>
+            Congratulations, you've completed {$num_problems} {$bits}-bit problems!
+        </div>
+        <div style="margin-top: 1em;">
+            <a href="#" on:click={reset}>Go back to the home screen.</a>
+        </div>
+    </div>
+
 {:else}
     <Tally />
     <form on:submit|preventDefault={check} class="{class_} problem">

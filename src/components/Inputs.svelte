@@ -17,6 +17,9 @@
         if (!$num_problems){
             num_problems.update(() => DEFAULT_NUM_PROBLEMS)
         }
+        if (!$bits){
+            bits.update(() => DEFAULT_BITS)
+        }
         const problems_ = generateProblems($bits, $num_problems)
         problems.update(() => problems_)
         activeQuiz.update(() => true)
