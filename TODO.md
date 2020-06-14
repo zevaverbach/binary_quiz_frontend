@@ -1,0 +1,8 @@
+- show a message on submit
+- show warning when specifying invalid number of bits or problems
+- prevent submissions more than x times per time
+- show a live-updating preview as you select different settings
+- make it look nice
+- add contact info
+- add 'about'
+- add mailing list
