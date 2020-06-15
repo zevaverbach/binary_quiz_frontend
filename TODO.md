@@ -1,3 +1,10 @@
+- mobile
+  - make autofocus work on quiz
+  - remove "[enter]" from start button
+  - make it all on one line 
+    - make the font smaller or the div wider
+  - put a 'submit' button in
+  - add a range slider for easier input?
 - make text inputs big enough for MAX_DIGITS_PROBLEMS and MAX_DIGITS_BITS
 - show a message on submit
 - show warning when specifying invalid number of bits or problems
@@ -7,11 +14,12 @@
   - prompt at the end of a quiz to sign up for it
 - uncomment PDF part
 - add PDF export in pure front end
-- does it work on mobile?
 - add animations
   - 'nuh-uh' shake for wrong answers
   - nice reward animations for right answers
   - make the placeholders become real text for a split second before starting
-  - super mario land pixellation animation
-- deploy to production
-  - use a custom domain
+  - super mario land [pixellation animation](http://blog.swishscripts.com/2019/06/19/snes-mosaic-effect/) ("mosaic")
+- add user accounts using Userbase
+  - required for higher numbers
+  - required for PDF output?
+  - required after X uses?
