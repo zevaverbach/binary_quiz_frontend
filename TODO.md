@@ -1,3 +1,13 @@
+- add progression
+- add explanation/tutorial
+- timed
+- add column labels
+- add spacing beyond X places
+- add color and font
+- optional super mario tyype sounds
+- gamification via character upgrades
+- processor graphic/animation
+  - diff processors for different bits
 - mobile
   - make autofocus work on quiz
   - remove "[enter]" from start button
