@@ -1,11 +1,11 @@
 <script>
-    import download from '../download'
+    import download from '../download.js'
     import {
         MIN_BITS, MAX_BITS, MIN_PROBLEMS, MAX_PROBLEMS, DEFAULT_BITS, DEFAULT_NUM_PROBLEMS,
         MAX_DIGITS_BITS, MAX_DIGITS_PROBLEMS
-    } from '../config'
-    import { bits, num_problems, valid, activeQuiz, problems } from '../stores'
-    import {generateProblems} from "../problems";
+    } from '../config.js'
+    import { bits, num_problems, valid, activeQuiz, problems } from '../stores.js'
+    import { generateProblems } from "../problems.js";
 
     const downloadAndClear = () => {
         download($bits || DEFAULT_BITS, $num_problems || DEFAULT_NUM_PROBLEMS)
@@ -54,7 +54,7 @@
         </label>
     </div>
     <input class="primary-button" disabled={!$valid} type=submit value="Start Quiz [enter]" >
-<!--    <input class="button" disabled={!$valid} type=button on:click={downloadAndClear} value="Download PDFs">-->
+    <!--    <input class="button" disabled={!$valid} type=button on:click={downloadAndClear} value="Download PDFs">-->
 </form>
 
 <style>
